@@ -1,0 +1,26 @@
+html
+  head
+    title #{title}
+    meta(http-equiv='content-type', content='text/html; charset=iso-8859-1')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    #sidebar
+      h1 JulioB
+      h2 Developer
+      #menu
+        a(href='/') Home
+        a(href='santiago') Santiago
+        a(href='buenosAires') Buenos Aires
+        a(href='lima') Lima
+        a.active(href='newyork') New York
+        a(href='toronto') Toronto
+    #content
+      h1 #{title}
+      h2 Tiempo
+      h3
+        | Hora actual de New York: #{hora}:#{minutos}
+      p
+        | Nueva York (en inglés y oficialmente, New York) es la ciudad más poblada del estado homónimo, y de los Estados Unidos de América, y la segunda mayor concentración urbana de América del Norte, después del Distrito Federal de México. La ciudad de Nueva York está entre las tres aglomeraciones urbanas más grandes y más pobladas del mundo.
+      img(src='images/newyork.jpg', width='512', height='160', alt='image example')
+      p(align='right') © Lcdo. Julio Baptista
+    br

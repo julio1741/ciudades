@@ -1,0 +1,25 @@
+html
+  head
+    title #{title}
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    #sidebar
+      h1 JulioB
+      h2 Developer
+      #menu
+        a.active(href='/') Home
+        a(href='santiago') Santiago
+        a(href='buenosaires') Buenos Aires
+        a(href='lima') Lima
+        a(href='newyork') New York
+        a(href='toronto') Toronto
+    #content
+      h1 #{title}
+      h2 Tiempos
+      h3 Hora de Distintas Ciudades
+      p
+        | En el mundo se emplean lógicamente diferentes horas de acuerdo a la posición geográfica de cada país, a diferencia de su localización no es regular, ni depende en lo absoluto de los grados de longitud, por lo que es imposible calcular la hora en un mapa que no sea el de zona o huso horarios. En ocasiones en ubicaciones distantes hasta miles de Kilómetros se usa la misma hora, (por ejemplo China y parte de la Comunidad Europea) lo que hace que existan lugares en que a las 8 de la mañana sea de noche, o que ya a las tres de la madrugada esté el sol afuera y sin estar en la zona ártica donde esto suele ser normal. Muchos países ajustan los límites de sus zonas y lo reconocen los tratados internacionales, para acomodarse a las fronteras nacionales e internacionales.
+      img(src='images/ciudades2.jpg', width='512', height='160', alt='image example')
+      p(align='right') © Lcdo. Julio Baptista
+    br

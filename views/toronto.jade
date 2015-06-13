@@ -1,0 +1,26 @@
+html
+  head
+    title #{title}
+    meta(http-equiv='content-type', content='text/html; charset=iso-8859-1')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    #sidebar
+      h1 JulioB
+      h2 Developer
+      #menu
+        a(href='/') Home
+        a(href='santiago') Santiago
+        a(href='buenosaires') Buenos Aires
+        a(href='lima') Lima
+        a(href='newYork') New York
+        a.active(href='toronto') Toronto
+    #content
+      h1 #{title}
+      h2 Tiempo
+      h3
+        | Hora actual de Toronto: #{hora}:#{minutos}
+      p
+        | Localizada en la orilla noroeste del lago Ontario, es la quinta ciudad más grande de Norteamérica. Toronto se encuentra en el corazón del Área Metropolitana de Toronto (Greater Toronto Area en inglés y abreviado como GTA), la mayor área metropolitana de Canadá, y es parte de una región densamente poblada en el centro-sur de Ontario conocida como Golden Horseshoe (Herradura Dorada), donde residen ocho millones de habitantes.
+      img(src='images/toronto.jpg', width='512', height='160', alt='image example')
+      p(align='right') © Lcdo. Julio Baptista
+    br

@@ -1,0 +1,26 @@
+html
+  head
+    title #{title}
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    #sidebar
+      h1 JulioB
+      h2 Developer
+      #menu
+        a(href='/') Home
+        a(href='santiago') Santiago
+        a.active(href='buenosaires') Buenos Aires
+        a(href='lima') Lima
+        a(href='newyork') New York
+        a(href='toronto') Toronto
+    #content
+      h1 #{title}
+      h2 Tiempo
+      h3
+        | Hora actual de Buenos Aires: #{hora}:#{minutos}
+      p
+        | Buenos Aires, formalmente Ciudad Autónoma de Buenos Aires (de forma abreviada CABA) también llamada Capital Federal por ser sede del gobierno federal, es una de las veinticuatro entidades federales y capital de la República Argentina. Está situada en la región centro-este del país, sobre la orilla occidental del río de la Plata, en plena llanura pampeana. Los resultados definitivos del censo de 2010 estiman la población de la ciudad en 2 890 151 habitantes, y la de su aglomeración urbana, el Aglomerado Gran Buenos Aires, en 14 391 538 habitantes; siendo la mayor área urbana del país, la segunda de Sudamérica, Hispanoamérica y del hemisferio sur, y una de las 20 mayores ciudades del mundo.
+      img(src='images/buenosaires.jpg', width='512', height='160', alt='image example')
+      p(align='right') © Lcdo. Julio Baptista
+    br

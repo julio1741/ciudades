@@ -1,0 +1,26 @@
+html
+  head
+    title #{title}
+    meta(http-equiv='content-type', content='text/html; charset=iso-8859-1')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    #sidebar
+      h1 JulioB
+      h2 Developer
+      #menu
+        a(href='index.php') Home
+        a(href='santiago') Santiago
+        a(href='buenosaires') Buenos Aires
+        a.active(href='#lima') Lima
+        a(href='newyork') New York
+        a(href='toronto') Toronto
+    #content
+      h1 #{title}
+      h2 Tiempo
+      h3
+        | Hora actual de Lima: #{hora}:#{minutos}
+      p
+        | Lima es la ciudad capital de la República del Perú. Se encuentra situada en la costa central del país, a orillas del océano Pacífico, conformando una extensa y populosa área urbana conocida como Lima Metropolitana, flanqueada por el desierto costero y extendida sobre los valles de los ríos Chillón, Rímac y Lurín. Según el censo peruano de 2007, Lima contaba con más de 7,6 millones de habitantes; Mientras que su aglomeración urbana contaba con más de 8,5 millones de habitantes, el 30% de la población peruana, cifras que la convierten en la ciudad más poblada del país.
+      img(src='images/lima.jpg', width='512', height='160', alt='image example')
+      p(align='right') © Lcdo. Julio Baptista
+    br
