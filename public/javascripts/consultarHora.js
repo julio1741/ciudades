@@ -27,3 +27,19 @@ function setHora(timeZone,id){
 		}
 	});
 }
+function setTiempo(url,id){
+  $.ajax({
+	  url : url,
+	  dataType : "jsonp",
+	  success : function(parsed_json) {
+	  var location = parsed_json['location']['city'];
+	  var temp_f = parsed_json['current_observation']['temp_f'];
+		$(id).text("Tiempo actual en " + location + " es de: " + parseFloat(convertToC(temp_f)).toFixed(1)+"ºc");
+	  }
+  });
+}
+function convertToC(f) {
+		var fTempVal = parseFloat(f);
+	var c = (fTempVal - 32) * (5/9);
+	return c;
+}
