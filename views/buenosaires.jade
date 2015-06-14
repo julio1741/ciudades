@@ -3,6 +3,9 @@ html
     title #{title}
     meta(http-equiv='content-type', content='text/html; charset=utf-8')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='javascripts/jquery.min.js')
+    script(src='javascripts/consultarHora.js')
+    script(src='javascripts/tiempoBuenosAires.js')
   body
     #sidebar
       h1 JulioB
@@ -18,9 +21,10 @@ html
       h1 #{title}
       h2 Tiempo
       h3
-        | Hora actual de Buenos Aires: #{hora}:#{minutos}
+        | Hora actual de Buenos Aires:
+        span#horaBuenosAires
       p
-        | Buenos Aires, formalmente Ciudad Autónoma de Buenos Aires (de forma abreviada CABA) también llamada Capital Federal por ser sede del gobierno federal, es una de las veinticuatro entidades federales y capital de la República Argentina. Está situada en la región centro-este del país, sobre la orilla occidental del río de la Plata, en plena llanura pampeana. Los resultados definitivos del censo de 2010 estiman la población de la ciudad en 2 890 151 habitantes, y la de su aglomeración urbana, el Aglomerado Gran Buenos Aires, en 14 391 538 habitantes; siendo la mayor área urbana del país, la segunda de Sudamérica, Hispanoamérica y del hemisferio sur, y una de las 20 mayores ciudades del mundo.
+        | Buenos Aires, formalmente Ciudad Autonoma de Buenos Aires (de forma abreviada CABA) tambien llamada Capital Federal por ser sede del gobierno federal, es una de las veinticuatro entidades federales y capital de la Republica Argentina. Esta situada en la region centro-este del pais, sobre la orilla occidental del rio de la Plata, en plena llanura pampeana. Los resultados definitivos del censo de 2010 estiman la poblacion de la ciudad en 2 890 151 habitantes, y la de su aglomeracion urbana, el Aglomerado Gran Buenos Aires, en 14 391 538 habitantes; siendo la mayor area urbana del pais, la segunda de Sudamerica, Hispanoamerica y del hemisferio sur, y una de las 20 mayores ciudades del mundo.
       img(src='images/buenosaires.jpg', width='512', height='160', alt='image example')
-      p(align='right') © Lcdo. Julio Baptista
+      p(align='right') &copy; Lcdo. Julio Baptista
     br

@@ -59,7 +59,7 @@ body > #sidebar
 {width:520px; margin:0 0 0 240px; padding:20px 0; background:#fafafa;}
 
 #content p
-{margin:0 0 20px 0; line-height:1.5em;}
+{margin:0 0 20px 0; line-height:1.5em; text-align: justify;text-justify: inter-word;}
 
 #content h1
 {margin:0; color:#A1B449; font-size:4em; letter-spacing:-5px; text-align:center;}

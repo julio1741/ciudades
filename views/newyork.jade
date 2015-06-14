@@ -3,6 +3,9 @@ html
     title #{title}
     meta(http-equiv='content-type', content='text/html; charset=iso-8859-1')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='javascripts/jquery.min.js')
+    script(src='javascripts/consultarHora.js')
+    script(src='javascripts/tiempoNewYork.js')
   body
     #sidebar
       h1 JulioB
@@ -18,9 +21,10 @@ html
       h1 #{title}
       h2 Tiempo
       h3
-        | Hora actual de New York: #{hora}:#{minutos}
+        | Hora actual de New York:
+        span#horaNewYork
       p
-        | Nueva York (en inglés y oficialmente, New York) es la ciudad más poblada del estado homónimo, y de los Estados Unidos de América, y la segunda mayor concentración urbana de América del Norte, después del Distrito Federal de México. La ciudad de Nueva York está entre las tres aglomeraciones urbanas más grandes y más pobladas del mundo.
+        | Nueva York (en ingles y oficialmente, New York) es la ciudad mas poblada del estado homonimo, y de los Estados Unidos de America, y la segunda mayor concentracion urbana de America del Norte, despues del Distrito Federal de Mexico. La ciudad de Nueva York esta entre las tres aglomeraciones urbanas mas grandes y mas pobladas del mundo.
       img(src='images/newyork.jpg', width='512', height='160', alt='image example')
-      p(align='right') © Lcdo. Julio Baptista
+      p(align='right') &copy; Lcdo. Julio Baptista
     br
