@@ -1,9 +1,11 @@
 function setHora(timeZone,id){
 	var theData = {};
-	theData['tz'] = timeZone;
+	theData['zone'] = timeZone;
+	theData['format'] = 'json';
+	theData['key'] = 'AHT76HK4PQSP';
 	$.ajax({
 		type: "*",
-		url: "http://json-time.appspot.com/time.json",
+		url: "http://api.timezonedb.com",
 		contentType: "text/javascript",
 		dataType:"jsonp",
 		data: theData,
@@ -14,9 +16,11 @@ function setHora(timeZone,id){
 			'Access-Control-Allow-Headers': 'Authorization'
 		},
 		success: function(result){
-			var hora = result.hour;
-			var minuto = result.minute;
-			var segundo = result.second;
+			console.log(result.timestamp)
+			var date = new Date(parseFloat((result.timestamp).toFixed(1)*1000));
+			var hora = date.getUTCHours();
+			var minuto = date.getUTCMinutes();
+			var segundo = date.getUTCSeconds();
 			if (hora.toString().length == 1)
 				hora = "0" + hora;
 			if (minuto.toString().length == 1)
@@ -34,7 +38,7 @@ function setTiempo(url,id){
 	  success : function(parsed_json) {
 	  var location = parsed_json['location']['city'];
 	  var temp_f = parsed_json['current_observation']['temp_f'];
-		$(id).text("Tiempo actual en " + location + " es de: " + parseFloat(convertToC(temp_f)).toFixed(1)+"ºc");
+		$(id).text("Tiempo actual en " + location + " es de: " + parseFloat(convertToC(temp_f)).toFixed(1)+"°c");
 	  }
   });
 }
