@@ -38,7 +38,11 @@ function setTiempo(url,id){
 	  success : function(parsed_json) {
 	  var location = parsed_json['location']['city'];
 	  var temp_f = parsed_json['current_observation']['temp_f'];
-		$(id).text("Tiempo actual en " + location + " es de: " + parseFloat(convertToC(temp_f)).toFixed(1)+"°c");
+	  var humedad = parsed_json['current_observation']['relative_humidity'];
+	  var st = parsed_json['current_observation']['feelslike_c'];
+	  var clima = parsed_json['current_observation']['weather'];
+	  //relative_humidity wind_kph feelslike_c wind_dir weather
+		$(id).text("Tiempo actual en " + location + " es de: " + parseFloat(convertToC(temp_f)).toFixed(1)+"°c"+" | Humedad: "+humedad+" | Sensación Térmica: "+st+"°c | Clima: "+clima);
 	  }
   });
 }
